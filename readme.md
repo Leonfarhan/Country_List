@@ -10,7 +10,7 @@ Aplikasi ini sudah dideploy dan dapat diakses di [www.nanti.com](www.nanti.com).
 
 ## ✨ Fitur
 
-### 1. **Country List**
+### 1. ** Country List**
 - Menampilkan daftar semua negara lengkap dengan bendera dan nama.
 - Fitur pencarian negara berdasarkan nama untuk memudahkan pengguna.
 
