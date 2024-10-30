@@ -7,7 +7,6 @@ import { Country } from '../types/country';
 
 export const CountryDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  // const navigate = useNavigate();
   const [country, setCountry] = useState<Country | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -157,5 +156,3 @@ const InfoCard: React.FC<InfoCardProps> = ({ icon, title, value }) => (
     </div>
   </div>
 );
-
-export default CountryDetail;

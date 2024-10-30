@@ -12,8 +12,8 @@ export const PartnershipCard: React.FC<PartnershipCardProps> = ({ country }) => 
   const navigate = useNavigate();
   const { removePartnership } = usePartnership();
 
-  const handleRemovePartnership = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  const handleRemovePartnership = (event: React.MouseEvent) => {
+    event.stopPropagation();
     if (window.confirm(`Are you sure you want to end the partnership with ${country.name.common}?`)) {
       removePartnership(country.cca3);
     }

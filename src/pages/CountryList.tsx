@@ -16,7 +16,7 @@ export const CountryList: React.FC = () => {
         const response = await axios.get('https://restcountries.com/v3.1/all');
         setCountries(response.data);
         setLoading(false);
-      } catch (err) {
+      } catch (error) {
         setError('Failed to fetch countries');
         setLoading(false);
       }

@@ -4,7 +4,6 @@ import { Globe2, Handshake } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const location = useLocation();
-
   const isActive = (path: string) => location.pathname === path;
 
   return (
@@ -37,7 +36,9 @@ export const Navbar: React.FC = () => {
             </Link>
           </div>
           <div className="inline-flex justify-end items-center ">
-            <img src="/logo-lanscape.png" alt="logo lanscape" className="h-9 hidden sm:block "/>
+            <a href="https://grosir.one/">
+              <img src="/logo-lanscape.png" alt="logo lanscape" className="h-9 hidden sm:block "/>
+            </a>
           </div>
         </div>
       </div>

@@ -28,5 +28,3 @@ export const CountryCard: React.FC<CountryCardProps> = ({ name, flagUrl, flagAlt
     </Link>
   );
 };
-
-export default CountryCard;
