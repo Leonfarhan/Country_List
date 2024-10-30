@@ -4,7 +4,7 @@ Aplikasi **Country Grosirone** adalah aplikasi web yang memungkinkan pengguna me
 melihat detail tiap negara, dan membuat permintaan kemitraan dengan negara-negara tersebut. 
 Dibangun dengan teknologi modern seperti **React**, **TypeScript**, dan **Tailwind CSS**, 
 aplikasi ini memanfaatkan **REST Countries API** sebagai sumber data. 
-Aplikasi ini sudah dideploy dan dapat diakses di [www.nanti.com](www.nanti.com).
+Aplikasi ini sudah dideploy dan dapat diakses di [https://country-list-grosirone.vercel.app/](https://country-list-grosirone.vercel.app/).
 
 ---
 
@@ -97,6 +97,6 @@ npm run dev
 ---
 
 ## 🌐 Demo
-Aplikasi ini sudah dapat diakses di [www.contohsaja.com](www.contohsaja.com).
+Aplikasi ini sudah dapat diakses di [https://country-list-grosirone.vercel.app/](https://country-list-grosirone.vercel.app/).
 
 ---
