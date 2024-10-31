@@ -56,7 +56,7 @@ export const CountryDetail: React.FC = () => {
     );
   }
 
-  const isPartner = partnerships.some(p => p.cca3 === country.cca3);
+  const isPartner = partnerships.some(partner => partner.cca3 === country.cca3);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
