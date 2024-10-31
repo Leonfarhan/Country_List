@@ -13,13 +13,13 @@ export const PartnershipProvider: React.FC<{ children: ReactNode }> = ({ childre
   const [partnerships, setPartnerships] = useState<Country[]>([]);
 
   const addPartnership = (country: Country) => {
-    if (!partnerships.some(p => p.cca3 === country.cca3)) {
+    if (!partnerships.some(partner => partner.cca3 === country.cca3)) {
       setPartnerships([...partnerships, country]);
     }
   };
 
   const removePartnership = (countryCode: string) => {
-    setPartnerships(partnerships.filter(p => p.cca3 !== countryCode));
+    setPartnerships(partnerships.filter(partner => partner.cca3 !== countryCode));
   };
 
   return (
@@ -36,5 +36,3 @@ export const usePartnership = () => {
   }
   return context;
 };
-
-export default PartnershipProvider;
