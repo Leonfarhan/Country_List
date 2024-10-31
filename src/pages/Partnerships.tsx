@@ -30,5 +30,3 @@ export const Partnerships: React.FC = () => {
     </div>
   );
 };
-
-export default Partnerships;

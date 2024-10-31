@@ -79,5 +79,3 @@ export const CountryList: React.FC = () => {
     </div>
   );
 };
-
-export default CountryList;

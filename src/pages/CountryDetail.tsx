@@ -19,6 +19,7 @@ export const CountryDetail: React.FC = () => {
         setCountry(response.data[0]);
         setLoading(false);
       } catch (error) {
+        console.log(error);
         setError('Failed to fetch country details');
         setLoading(false);
       }
@@ -99,7 +100,7 @@ export const CountryDetail: React.FC = () => {
               icon={<Coins />}
               title="Currencies"
               value={Object.values(country.currencies || {})
-                .map((c: any) => `${c.name} (${c.symbol})`)
+                .map((currency) => `${currency.name} (${currency.symbol})`)
                 .join(', ')}
             />
             <InfoCard
