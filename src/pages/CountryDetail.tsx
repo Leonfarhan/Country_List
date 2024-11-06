@@ -79,7 +79,7 @@ export const CountryDetail: React.FC = () => {
             <InfoCard
               icon={<Globe2 />}
               title="Region"
-              value={`${country.subregion}, ${country.region}`}
+              value={`${country.subregion ?? 'Tidak di ketahui'}, ${country.region}`}
             />
             <InfoCard
               icon={<Building2 />}
