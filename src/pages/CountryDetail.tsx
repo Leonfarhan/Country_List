@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { Map, Globe2, Users, Building2, Coins, Languages, Award } from 'lucide-react';
+import {Map, Globe2, Users, Building2, Coins, Languages, Award, Handshake} from 'lucide-react';
 import { usePartnership } from '../context/PartnershipContext';
 import { Country } from '../types/country';
 
@@ -11,6 +11,8 @@ export const CountryDetail: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const { addPartnership, partnerships } = usePartnership();
+
+  const isPartner = partnerships.some(partner => partner.cca3 === country?.cca3)
 
   useEffect(() => {
     const fetchCountry = async () => {
@@ -55,8 +57,6 @@ export const CountryDetail: React.FC = () => {
       </div>
     );
   }
-
-  const isPartner = partnerships.some(partner => partner.cca3 === country.cca3);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -107,6 +107,11 @@ export const CountryDetail: React.FC = () => {
               icon={<Award />}
               title="Independent"
               value={country.independent ? 'Yes' : 'No'}
+            />
+            <InfoCard
+              icon={<Handshake />}
+              title="Relationship"
+              value={ isPartner ? "Yes" : "No" }
             />
           </div>
 
