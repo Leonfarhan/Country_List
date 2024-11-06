@@ -10,6 +10,16 @@ export const CountryList: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
+  // const sortingCountries = (a: Country, b: Country) :number => {
+  //   a.name.common.toLowerCase();
+  //   b.name.common.toLowerCase();
+  //
+  //   if (a < b) return -1;
+  //   if (a > b) return 1;
+  //
+  //   return 0;
+  // }
+
   useEffect(() => {
     const fetchCountries = async () => {
       try {
@@ -23,6 +33,7 @@ export const CountryList: React.FC = () => {
       }
     };
 
+    // setCountries([...data].sort(sortingCountries))
     fetchCountries();
   }, []);
 
