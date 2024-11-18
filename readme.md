@@ -1,6 +1,6 @@
-# Country Grosirone
+# Country List
 
-Aplikasi **Country Grosirone** adalah aplikasi web yang memungkinkan pengguna menampilkan daftar negara, 
+Aplikasi **Country List** adalah aplikasi web yang memungkinkan pengguna menampilkan daftar negara, 
 melihat detail tiap negara, dan membuat permintaan kemitraan dengan negara-negara tersebut. 
 Dibangun dengan teknologi modern seperti **React**, **TypeScript**, dan **Tailwind CSS**, 
 aplikasi ini memanfaatkan **REST Countries API** sebagai sumber data. 
